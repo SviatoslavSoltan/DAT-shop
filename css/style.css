@@ -584,6 +584,10 @@ footer hr{
     margin: 25px 0;
 }
 
+.footer_list :nth-last-child(1){
+    margin-bottom: 0;
+}
+
 .footer_list a{
     font-weight: 400;
     font-size: 18px;
