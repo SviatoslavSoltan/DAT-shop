@@ -5,12 +5,6 @@ body{
 }
 
 
-
-/*about_us section*/
-.about_section{
-background-color: #F8F8F8;
-}
-
 /*Header TOP*/
 header{
     width: 100%;
@@ -64,8 +58,6 @@ header{
     background: rgba(255, 255, 255, 0.1);
 }
 
-
-
 /*header middle*/
 
 .header_middle{
@@ -104,7 +96,6 @@ header{
     
 }
 
-
 .call_me{
     width: 260px;
     height: 41px;
@@ -128,18 +119,22 @@ header{
 }
 
 .middle_nav{
-    padding-top: 14px;
     margin-left: 42px;
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mid_nav_item{
 text-decoration: none;
 }
 
-.mid_nav_item span{
+.middle_nav a{
     font-weight: 700;
     font-size: 12px;
-    color: #000;    
+    color: #000;  
+    text-decoration: none;  
 }
 
 
@@ -249,6 +244,11 @@ h1 span{
 }
 
 /*About_us*/
+
+.about_section{
+    background-color: #F8F8F8;
+    }
+
 .about_us{
     display: flex;
     justify-content: space-between;
