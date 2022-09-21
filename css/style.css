@@ -129,6 +129,13 @@ header{
     border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #484848;
+}
+
 .search button{
     border: none;
     padding: 10px;
@@ -169,16 +176,32 @@ color: #000000;
 }
 
 .middle_nav a{
+    box-sizing: border-box;
     float: left;
     margin: 0 7px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8C3213;
+    border-radius: 50%;
+    padding: 11px;
 }
 
+
+.middle_nav a:hover{
+    background: #8C3213;
+    box-shadow: 0px 5px 14px rgba(140, 50, 19, 0.3);
+}
+
+
 .middle_nav .total_price{
+    float: left;
+    display: block;
     margin: 10px 0px;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     color: #000000;
+    
 }
 
 
@@ -439,6 +462,12 @@ color: #000000;
     border-radius: 20px;
     position: relative;
 }
+
+.slider_item:hover{
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
+}
+
+
 
 .item_top{
     background: #fff;
