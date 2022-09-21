@@ -20,6 +20,7 @@ body{
     max-width: 1110px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -27,7 +28,6 @@ body{
 header{
     width: 100%;
     position: absolute;
-
 }
 
 
@@ -131,7 +131,7 @@ header{
 
 .search button{
     border: none;
-  padding: 10px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -140,6 +140,11 @@ header{
     margin-left: 55px;
     overflow: hidden;
     width: 265px;
+}
+
+.call_me a:hover{
+    text-decoration: underline;
+    color: #000;
 }
 
 .call_back{
@@ -233,13 +238,10 @@ color: #000000;
 
 /*MAIN SECTION*/
 .main_section{
-background: url(../img/background/inner_background.png);
+    background: url(../img/background/inner_background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.main_section{
     padding-top: 200px;
     overflow: hidden;
 }
@@ -247,12 +249,23 @@ background: url(../img/background/inner_background.png);
 .main_container{
     overflow: hidden;
     width: 100%;
-    max-width: 1510px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 90px;
 }
 
 
+.sub_container{
+    overflow: auto;
+    width: 100%;
+    max-width: 1510px;
+}
+
 .main_text{
-    margin-top: 180px;
+    margin-top: 90px;
+    margin-right: 105px;
+    max-width: 570px;
+   
 }
 
 .main_text h1{
@@ -268,6 +281,7 @@ background: url(../img/background/inner_background.png);
     font-size: 55px;
     line-height: 67px;
     color: #000000;
+    padding-left: 45px;
 }
 
 .main_text p{
@@ -280,8 +294,8 @@ background: url(../img/background/inner_background.png);
     clear: both;
     float: left;
     margin: 25px 0 25px;
+    padding-left: 45px;
 }
-
 
 .about_btn{
     font-weight: 700;
@@ -293,13 +307,14 @@ background: url(../img/background/inner_background.png);
     padding: 15px 48px;
     clear: both;
     float: left;
+    margin-left: 45px;
+}
+
+.about_btn:hover{
+    background: #1E6140;
 }
 
 
-.main_image{
-    float: right;
-    margin-top: 90px;
-}
 
 /*About Section*/
 
@@ -319,14 +334,12 @@ background: url(../img/background/inner_background.png);
 .about_us_img{
     width: 683px;
     height: 557px;
-    float: left;
 }
 
 .about_us_content h2{
     font-weight: 700;
     font-size: 45px;
     color: #000; 
-    float: left;
     margin-bottom: 20px;
 }
 
@@ -353,7 +366,7 @@ background: url(../img/background/inner_background.png);
     color: #1E6140;
 }
 
-.about_btn{
+.about_us_btn{
     font-weight: 700;
     font-size: 16px;
     color: #fff;
@@ -364,6 +377,11 @@ background: url(../img/background/inner_background.png);
     margin-top: 40px;
     clear: both;
     float: left;
+}
+
+
+.about_us_btn:hover{
+    background: #1E6140;
 }
 
 
@@ -432,18 +450,22 @@ background: url(../img/background/inner_background.png);
 }
 
 .item_top button{
+    box-sizing: border-box;
     padding: 10px 10px;
     border: none;
     background: #fff;
     position: absolute;
     top: 10px;
     right: 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
     
 }
 .item_top button:hover{
     box-sizing: border-box;
     cursor: pointer;
-    
+    border: 1px solid #8C3213;
+    border-radius: 50%;
 }
 
 .item_bottom{
@@ -464,6 +486,7 @@ background: url(../img/background/inner_background.png);
 
 .item_info{
     overflow: hidden;
+    padding: 5px;
 }
 
 .item_price{
@@ -491,8 +514,8 @@ background: url(../img/background/inner_background.png);
     border: #FFFFFF;
     background: #FFFFFF;
     margin-left: 115px;
-    margin-top: 15px;
-
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
 .item_buy:hover{
@@ -504,9 +527,9 @@ background: url(../img/background/inner_background.png);
 .right_arrow{
     width: 70px;
     height: 70px;
-    border-radius: 90px;
+    border-radius: 50%;
     border: 1px solid #84C551;
-    background-color: rgba(255, 255, 255, 0);
+    background: transparent;
 }
 
 .left_arrow:hover,
@@ -550,9 +573,16 @@ transform: scaleX(-1);
     width: 220px;
     height: 47px;
     background: #E74E13;
+    border: 1px solid transparent;
     border-radius: 90px;
-    padding: 15px 20px;
+    padding: 15px 19px;
     margin: 0px auto;
+}
+
+
+.all_goods_btn:hover{
+    background: #1E6140;
+    border: 1px solid #E74E13;
 }
 
 
@@ -702,6 +732,12 @@ footer nav{
     color: #000000;
 }
 
+.footer_list a:hover{
+    color: #000000;
+    text-decoration: underline #000;
+}
+
+
 footer .call_me{
     margin: 25px 0;
 }
@@ -740,6 +776,7 @@ right: 279px;
 
 .to_header:hover{
     cursor: pointer;
+    background: #1E6140;
 }
 
 .the_end{
