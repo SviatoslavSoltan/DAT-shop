@@ -449,6 +449,7 @@ input::placeholder{
     width: 100%;
     max-width: 1410px;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .slider_container h2{
@@ -851,10 +852,14 @@ right: 15%;
     margin: 0 auto;
 }
 
+.new_slider.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
 .slick-prev:before {
     content: '←';
     color: #000;
-
 }
 
 .slider_section{
@@ -866,7 +871,40 @@ right: 15%;
     padding: 25px 0;
 }
 
+.new_slider .slick-dots{
+    position: absolute;
+    bottom: 0px;
+}
 
+.new_slider .slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.new_slider .slick-dots li button:before{
+    content: none;
+}
+
+.new_slider .slick-dots li button{
+    width: 6px;
+    height: 16px;
+    background: rgba(141, 50, 0, 0.1);
+    border-radius: 20px;  
+    padding: 4px; 
+}
+
+.new_slider .slick-dots li.slick-active button{
+    width: 6px;
+    height: 30px;
+    background: #8D3200;
+    border-radius: 20px;
+    padding: 4px; 
+}
 
 button.slick-prev.slick-arrow{
     width: 70px;
