@@ -4,3 +4,11 @@
     
     }
 }
+
+@media(max-width:1300px){
+    body .slider_container button.slick-next.slick-arrow,
+    body .slider_container button.slick-prev.slick-arrow{
+        display: none;
+    }
+}
+

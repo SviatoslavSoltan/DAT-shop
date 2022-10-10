@@ -928,7 +928,12 @@ button.slick-next.slick-arrow{
     background-image: url(../img/right_arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
-    right: -80px;
+    right: -110px;
+}
+
+.promotion_section button.slick-next.slick-arrow,
+.promotion_section button.slick-prev.slick-arrow{
+    top: 40%;
 }
 
 
@@ -991,8 +996,3 @@ button.slick-next.slick-arrow:before{
     padding: 0;
 }
 
-
-
-
-background: rgba(255, 255, 255, 0.2);
-border-radius: 20px;
