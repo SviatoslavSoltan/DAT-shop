@@ -895,7 +895,7 @@ right: 15%;
     height: 16px;
     background: rgba(141, 50, 0, 0.1);
     border-radius: 20px;  
-    padding: 4px; 
+    padding: 0;
 }
 
 .new_slider .slick-dots li.slick-active button{
@@ -903,7 +903,7 @@ right: 15%;
     height: 30px;
     background: #8D3200;
     border-radius: 20px;
-    padding: 4px; 
+    padding: 0;
 }
 
 button.slick-prev.slick-arrow{
@@ -958,3 +958,41 @@ button.slick-prev.slick-arrow:before{
 button.slick-next.slick-arrow:before{
     content: none;
 }
+
+
+.promotion_section .new_slider.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+    padding-bottom: 110px;
+    padding-top: 35px;
+}
+
+
+
+.promotion_section .new_slider .slick-dots {
+    position: absolute;
+    bottom: 40px;
+}
+
+
+
+.promotion_section .new_slider .slick-dots li button{
+    width: 6px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px; 
+    padding: 0; 
+}
+
+.promotion_section .new_slider .slick-dots li.slick-active button{
+    width: 6px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 0;
+}
+
+
+
+
+background: rgba(255, 255, 255, 0.2);
+border-radius: 20px;
