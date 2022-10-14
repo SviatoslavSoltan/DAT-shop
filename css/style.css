@@ -12,6 +12,10 @@ body{
     position: relative;
 }
 
+
+
+
+
 /*HEADER TOP*/
 .container_top{
     width: 100%;
@@ -281,6 +285,11 @@ input::placeholder{
 }
 
 
+.bottom_nav_mobile{
+    display: none;
+}
+
+
 /*MAIN SECTION*/
 .main_section{
     background: url(../img/background/inner_background.png);
@@ -383,6 +392,10 @@ input::placeholder{
     max-width: 100%;
 }
 
+.about_us_content{
+    padding-left: 20px;
+}
+
 .about_us_content h2{
     font-weight: 700;
     font-size: 45px;
@@ -427,17 +440,6 @@ input::placeholder{
     background: #1E6140;
 }
 
-@media (max-width:1440px){
-    .about_section{
-        padding: 0px 10px;
-        
-    }
-        .about_us_img{
-        width: 50%;
-    }
-}
-
-
 
 /**Novelty section**/
 
@@ -473,25 +475,22 @@ input::placeholder{
 }
 
 .slider_item{
-    width: 255px;
-    height: 355px;
     background: #fff;
     border-radius: 20px;
     position: relative;
+    padding: 10px 10px;
 }
 
 .slider_item:hover{
     box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.15);
 }
 
-.slider_article{
-    max-width: 255px;
-    margin: 0 15px;
-}
-
 .item_top{
     background: #fff;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item_top>img{
@@ -518,8 +517,6 @@ input::placeholder{
 }
 
 .item_bottom{
-    width: 235px;
-    height: 150px;
     background: rgba(140, 50, 19, 0.06);
     border-radius: 20px;
     margin: 0 auto;
@@ -534,7 +531,6 @@ input::placeholder{
 }
 
 .item_info{
-    padding: 5px;
     margin-top: 25px;
     padding: 0 20px;
     display: flex;
@@ -572,24 +568,6 @@ input::placeholder{
     background: #8D3200;
 }
 
-.left_arrow, 
-.right_arrow{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 1px solid #84C551;
-    background: transparent;
-}
-
-.left_arrow:hover,
-.right_arrow:hover{
-    background: #83c452;
-    cursor: pointer;
-}
-
-.right_arrow img{
-transform: scaleX(-1);
-}
 
 
 .promotion_section{
@@ -685,19 +663,7 @@ transform: scaleX(-1);
 }
 
 
-.partners .left_arrow{
-    margin: 0;
-    position: absolute;
-    left: 180px;
-    top: 70px;
-    
-}
-.partners .right_arrow{
-    margin: 0;
-    position: absolute;
-    right: 180px;
-    top: 70px;
-}
+
 
 /*Seeds section*/
 
@@ -783,6 +749,7 @@ footer nav{
     font-size: 18px;
     line-height: 22px;
     color: #000000;
+    text-decoration: none;
 }
 
 .footer_list a:hover{
@@ -793,6 +760,7 @@ footer nav{
 
 footer .call_me{
     margin: 25px 0;
+    text-decoration: none;
 }
 
 .footer_address {
@@ -806,6 +774,7 @@ footer .call_me{
     line-height: 20px;
     color: #000000;
     margin-left: 7px;
+    text-decoration: none;
 }
 
 
@@ -850,6 +819,12 @@ right: 15%;
     padding: 50px 0;
     max-width: 1110px;
     margin: 0 auto;
+}
+
+
+.slick-initialized .slick-slide {
+    display: block;
+    margin: 0 10px;
 }
 
 .new_slider.slick-dotted.slick-slider {
@@ -994,5 +969,33 @@ button.slick-next.slick-arrow:before{
     background: #FFFFFF;
     border-radius: 20px;
     padding: 0;
+}
+
+.partners_section div.new_slider {
+    max-width: 100%;
+
+}
+
+.partners_section .new_slider
+.slick-next{
+    right: 15%;
+}
+
+.partners_section .new_slider
+.slick-prev{
+    left: 15%;
+}
+
+.partners_section .new_slider
+.slick-track div.slick-slide {
+    display: block;
+    width: 255px !important;
+}
+
+
+
+.partners_section .new_slider 
+button.slick-prev.slick-arrow{
+ z-index: 1;
 }
 
