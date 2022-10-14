@@ -533,6 +533,7 @@ input::placeholder{
     max-width: 1410px;
     margin: 0 auto;
     padding-bottom: 60px;
+    padding-top: 80px;
 }
 
 .slider_container h2{
