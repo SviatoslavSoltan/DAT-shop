@@ -75,8 +75,11 @@
     }
 }
 
-
-
+@media(max-width:1024px){
+    .about_section {
+    padding-top: 30px;
+}
+}
 
 
 
@@ -373,7 +376,7 @@
 
     .main_image {
         max-width: 90%;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .about_us_img {
@@ -387,6 +390,7 @@
         padding-top: 20px;
     }
 
+    
     .about_section p{
         margin: 0;
     }
