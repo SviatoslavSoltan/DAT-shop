@@ -195,7 +195,7 @@
     }
 
     .new_slider.slick-dotted.slick-slider {
-        padding-top: 0;
+        padding-top: 30px;
     }
 
     .seeds_section h2 {
@@ -358,6 +358,18 @@
     .bottom_nav_mobile li:hover .mobile_hiddden{
     display: block;
     }
+
+    .bottom_nav_mobile a:hover {
+        color: #fff;
+    }
+    
+    .bottom_nav_mobile a:hover .mobile_vector{
+        transform: rotate(180deg);
+    }
+
+    .bottom_nav_mobile li:hover .mobile_hiddden{
+        display: block;
+        }
 
 
     .mobile_hiddden{
