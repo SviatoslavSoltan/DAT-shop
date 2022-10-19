@@ -5,18 +5,28 @@
 * Browsers: last 4 version
 */
 
+
+@media(max-width:1550px){
+    .main_container {
+        padding-left: 20px;
+    }
+    .main_image {
+        max-width: 50%;
+    }
+}
+
 @media(max-width:1400px){
     .container_top .nav-item a.nav-link {
         padding: 15px 10px;
     }
-    
+
     .bottom_nav a{
         width: 180px;
     }
 
 
     .main_container {
-        padding: 30px 0 30px 10px;
+        padding: 30px 0 30px 30px;
     }
 
 
@@ -31,7 +41,7 @@
     }
 
     .about_us_container{
-        padding: 30px 0;
+        padding: 30px 30px;
     }
 
     .about_us_img {
@@ -74,7 +84,7 @@
     .new_slider {
         font-size: 30px;
         padding: 30px 0;
-        max-width: 1110px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -88,13 +98,48 @@
     .about_section {
     padding-top: 30px;
 }
+
+    .slider_container {
+        padding-top: 20px;
+    }
+
+
+    .new_slider.slick-dotted.slick-slider {
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        width: 85%;
+    }
+
+    footer nav {
+        margin-bottom: 0px;
+    }
+
+
+    .footer {
+        justify-content: space-around;
+    }
+
+
+
 }
 
-
+@media(max-width:900px){
+    .main_image {
+        max-height: 90%;
+    }
+}
 
 @media(max-width:768px){
     .header_middle {
         padding: 20px 20px;
+    }
+
+    .bottom_nav{
+        justify-content: space-around;
+    }
+
+    .bottom_nav a{
+        margin: 5px;
     }
 
     .search {
@@ -198,6 +243,10 @@
         padding-top: 30px;
     }
 
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+
     .seeds_section h2 {
         font-size: 35px;
         line-height: 55px;
@@ -272,11 +321,116 @@
 
 }
 
+@media(max-width:630px){
+    .header_middle{
+        justify-content: space-around;
+    }
+
+    .header_middle .call_me{
+        margin: 0 10px;
+    }
+
+    .main_container {
+        padding: 10px 0 50px;
+    }
+
+    .main_text img{
+        display: block;
+        left: 20px;
+        top: 4px;
+    }    
+
+    .main_text {
+        padding-left: 60px;
+        margin: 0;
+        max-width: 90%;
+    }
+
+    .main_text h1 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .main_text h1 span {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .main_image {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+
+    .about_us_img {
+        width: 79%;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        margin: 0 auto;
+    }
+
+    .about_us_content {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+
+    
+    .about_section p{
+        margin: 0;
+    }
+
+    .about_us_content img {
+        display: inline-block;
+    }
+
+    .about_us_content h2 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .slider_container {
+        width: 100%;
+        max-width: 1410px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        padding-top: 20px;
+    }
 
 
 
+    .slider_container h2 {
+        font-weight: 700;
+        font-size: 22px;
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .slider_container h2 img{
+        max-width: 14px;
+    }
 
 
+    .footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .footer_logo {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer nav {
+        margin-bottom: 20px;
+    }
+}
 
 @media(max-width:426px){
     body ul {
@@ -422,6 +576,10 @@
         margin: 20px auto;
     }
 
+    .about_us_container {
+        padding: 30px 10px;
+    }
+
     .about_us_img {
         width: 90%;
         -webkit-transform: none;
@@ -482,7 +640,6 @@
 
 }
 
-
 @media(max-width:322px){
 
 .slider_item {
@@ -492,7 +649,6 @@
     padding: 0;
 }
 }
-
 
 @media(max-width:991px){
     .container-fluid{
