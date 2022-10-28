@@ -303,6 +303,12 @@ input::placeholder{
     color: #000000;
 }
 
+
+
+.headerNav_hidden{
+    display: none;
+}
+
 .bottom_nav{
     display: -webkit-box;
     display: -ms-flexbox;

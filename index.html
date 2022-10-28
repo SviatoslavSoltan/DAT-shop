@@ -93,8 +93,8 @@
         
     
     
-    <main>
-        <section class="main_section">
+<main>
+    <section class="main_section">
         <div class="container middle_container">
             <div class="header_middle">
                 <div class="logo">
@@ -146,358 +146,384 @@
                     </a>
                 </nav>
 
-
-                <nav class="bottom_nav_mobile">
-                    <ul>
-                    <li>
-                        <a href="#">
-                            <div>
-                                <img class="bottom_nav_img" src="./img/icons/seeds.png" alt="">
-                                <span>Насіння</span>
-                            </div>
-                            <img class="mobile_vector" src="./img/icons/Vector.svg" alt="">
+                <div class="headerNav_hidden">
+                    <button onclick="myFunction()" class="header_dropbtn"><img class="bottom_nav_img" src="./img/icons/seeds.png" alt="">Насіння</button>
+                    <ul class="headerNav__list_drop" id="myDropdown">
+                        <li class="headerNav__item_drop">
+                            <a href="#">
+                            <img class="bottom_nav_img" src="./img/icons/seeds.png" alt="">
+                            <span>Насіння</span>
                         </a>
-
-                        <ul class="mobile_hiddden">
-                            <li>
-                                <a href="#">
-                                    <img class="bottom_nav_img" src="./img/icons/sapling.svg" alt="">
-                                    <span>Засоби захисту рослин</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="bottom_nav_img" src="./img/icons/fertilizer.svg" alt="">
-                                    <span>Добрива</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="bottom_nav_img" src="./img/icons/food.svg" alt="">
-                                    <span>Кормова група</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="bottom_nav_img" src="./img/icons/farmer.svg" alt="">
-                                    <span>Агроному в поміч</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                        </li>
+                        <li class="headerNav__item_drop">
+                            <a href="#">
+                            <img class="bottom_nav_img" src="./img/icons/sapling.svg" alt="">
+                            <span>Засоби захисту рослин</span>
+                        </a>
+                        </li>
+                        <li class="headerNav__item_drop">
+                            <a href="#">
+                                <img class="bottom_nav_img" src="./img/icons/fertilizer.svg" alt="">
+                                <span>Добрива</span>
+                            </a>
+                        </li>
+                        <li class="headerNav__item_drop">
+                            <a href="#">
+                                <img class="bottom_nav_img" src="./img/icons/food.svg" alt="">
+                                <span>Кормова група</span>
+                            </a>
+                        </li>
+                        <li class="headerNav__item_drop">
+                            <a href="#">
+                                <img class="bottom_nav_img" src="./img/icons/farmer.svg" alt="">
+                                <span>Агроному в поміч</span>
+                            </a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show_drop");
+                    }
+
+                    // Close the dropdown menu if the user clicks outside of it
+                    window.onclick = function(event) {
+                    if (!event.target.matches('.header_dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("headerNav__list_drop");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show_drop')) {
+                            openDropdown.classList.remove('show_drop');
+                        }
+                        }
+                    }
+                    }
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
             </div>
         </div>
-        
-            <div class="main_container">
-                    <div class="sub_container">
-                        <div class="main_text">
-                            <img src="./img/Vector_icon.png" alt="">
-                                <h1>Аграрний <span>інтернет-магазин</span></h1>
-                                <p>Основна сфера діяльності – дистрибуція насіння, засобів захисту рослин, мінеральних макро - та мікродобрив</p>
-                                <div class="button_div"><a class="about_btn" href="#">Про компанію</a></div>
-                        </div>
-                        <img class="main_image" src="./img/farmer_img.png" alt="">
+        <div class="main_container">
+                <div class="sub_container">
+                    <div class="main_text">
+                        <img src="./img/Vector_icon.png" alt="">
+                            <h1>Аграрний <span>інтернет-магазин</span></h1>
+                            <p>Основна сфера діяльності – дистрибуція насіння, засобів захисту рослин, мінеральних макро - та мікродобрив</p>
+                            <div class="button_div"><a class="about_btn" href="#">Про компанію</a></div>
                     </div>
-            </div>
-        </section>
-        
-        <section class="about_section">
-            <div class="about_us_container">
-                <img class="about_us_img" src="./img/about_img.png" alt="">
-                <div class="about_us_content">
-                    <h2> <img src="./img/Vector_icon.png" alt="">Про нас</h2>
-                        <p class="about_us_item">
-                        <span>«Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, яка з’явилась на аграрному ринку у 2020 році.
-                        Ми не боїмось труднощів і викликів. Тому навіть складний ковідний період, світова пандемія нестали на заваді успішному старту.
-                        </p>
-                        <p class="about_us_item">
-                            Отже, <span>ми — сміливі, ми — драйвові,</span> ми — ті, що розвивають рослинництво та допомагають ставати
-                            успішними тисячам вітчизняних аграріїв.
-                        </p>
-                        <p class="about_us_item">
-                            <span>Бачення:</span> компанія ТОВ “ДАМАР АГРОТРЕЙД” тримає курс на підвищення престижності, довіри до засобів
-                                захисту рослин made in UA. Прагнемо, аби в кожному регіоні України наш споживач мав доступ до якісної
-                                продукції та консалтингу від фахівців команди.
-                        </p>
-                        <p class="about_us_item">
-                            <span>Місія:</span> усе продуктове портфоліо, консультативні послуги ТОВ “ДАМАР АГРОТРЕЙД” направлені на підвищення
-                            рентабельності рослинництва в мінливих кліматичних умовах України. Також ставимо собі завдання підвищувати
-                                обізнаність клієнтів щодо сучасних методів ведення рослинництва...
-                        </p>
-                    <div class="button_div"><a class="about_us_btn" href="#">Докладніше</a></div>
+                    <img class="main_image" src="./img/farmer_img.png" alt="">
                 </div>
+        </div>
+    </section>
+    
+    <section class="about_section">
+        <div class="about_us_container">
+            <img class="about_us_img" src="./img/about_img.png" alt="">
+            <div class="about_us_content">
+                <h2> <img src="./img/Vector_icon.png" alt="">Про нас</h2>
+                    <p class="about_us_item">
+                    <span>«Компанія ТОВ “ДАМАР АГРОТРЕЙД”</span> — молода команда, яка з’явилась на аграрному ринку у 2020 році.
+                    Ми не боїмось труднощів і викликів. Тому навіть складний ковідний період, світова пандемія нестали на заваді успішному старту.
+                    </p>
+                    <p class="about_us_item">
+                        Отже, <span>ми — сміливі, ми — драйвові,</span> ми — ті, що розвивають рослинництво та допомагають ставати
+                        успішними тисячам вітчизняних аграріїв.
+                    </p>
+                    <p class="about_us_item">
+                        <span>Бачення:</span> компанія ТОВ “ДАМАР АГРОТРЕЙД” тримає курс на підвищення престижності, довіри до засобів
+                            захисту рослин made in UA. Прагнемо, аби в кожному регіоні України наш споживач мав доступ до якісної
+                            продукції та консалтингу від фахівців команди.
+                    </p>
+                    <p class="about_us_item">
+                        <span>Місія:</span> усе продуктове портфоліо, консультативні послуги ТОВ “ДАМАР АГРОТРЕЙД” направлені на підвищення
+                        рентабельності рослинництва в мінливих кліматичних умовах України. Також ставимо собі завдання підвищувати
+                            обізнаність клієнтів щодо сучасних методів ведення рослинництва...
+                    </p>
+                <div class="button_div"><a class="about_us_btn" href="#">Докладніше</a></div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="novelty_section">
-            <div class="slider_container">
-                <h2>
-                    <img src="./img/Vector_icon.png" alt=""><span>Новинки</span><img src="./img/back_Vector_icon.png" alt="">
-                </h2>
-                <div class="new_slider">
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/flower_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Петунія Софістика F1</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">20</p> 
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/skor_ing.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Скор 250 ЕС к.э.</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">589</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/bottle_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Скор 250 ЕС к.э.</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">200</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/petunya_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Петунія Софістика F1</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">20</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>   
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/flower_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Петунія Софістика F1</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">20</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="promotion_section">
-            <div class="slider_container">
-                <h2>
-                    <img src="./img/Vector_icon.png" alt=""><span>Акції</span><img src="./img/back_Vector_icon.png" alt="">
-                </h2>
-                <div class="new_slider">
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/flower_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Петунія Софістика F1</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">20</p> 
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/skor_ing.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Скор 250 ЕС к.э.</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">589</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/bottle_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Скор 250 ЕС к.э.</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">200</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/petunya_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Петунія Софістика F1</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">20</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div>   
-                        <article class="slider_article">
-                            <div class="slider_item">
-                                <div class="item_top">
-                                    <img src="./img/flower_img.png" alt="Опис товару">
-                                    <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
-                                </div>
-                                <div class="item_bottom">
-                                    <h4>Петунія Софістика F1</h4>
-                                    <div class="item_info">
-                                        <div class="price_of_item">
-                                            <p class="item_price">20</p>
-                                            <p class="item_quantity">1</p>
-                                        </div>
-                                        <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-
-                <a class="all_goods_btn" href="#">Дивитися усі товари</a>
-            </div>
-        </section>
-
-        <section class="partners_section">
-            <div class="partners">
-                <h2><img src="./img/Vector_icon.png" alt=""><span>Партнери</span><img src="./img/back_Vector_icon.png" alt=""></h2>
-                
-
-                <div class="new_slider">
-                    <div><img src="./img/partners_logo/rodo_logo.svg" alt="rodo_logo"></div>
-                    <div><img src="./img/partners_logo//basf_logo.svg" alt="basf_logo"></div>
-                    <div><img src="./img/partners_logo/adama_logo.svg" alt="adama_logo"></div>
-                    <div><img src="./img/partners_logo/lidea_logo.svg" alt="lidea_logo"></div>
-                    <div><img src="./img/partners_logo/dekalb_logo.svg" alt="dekalb_logo"></div>
-                    <div><img src="./img/partners_logo//basf_logo.svg" alt="basf_logo"></div>
-                  </div>
-            </div>
-        </section>
-
-        <section class="seeds_section">
-            <div class="container">
-                <h2><img src="./img/Vector_icon.png" alt="">Семена</h2>
+    <section class="novelty_section">
+        <div class="slider_container">
+            <h2>
+                <img src="./img/Vector_icon.png" alt=""><span>Новинки</span><img src="./img/back_Vector_icon.png" alt="">
+            </h2>
+            <div class="new_slider">
                 <div>
-                    <p class="seeds_text">Вирощування овочів, квітів на своїй ділянці або просто на балконі - це улюблене заняття багатьох дачників та городників.
-                        Звичайно, свіжі овочі з власного городу натуральні, смачні та корисні. Але щоб отримати хороший урожай томату або капусти,
-                        насолоджуватися цвітінням петунії або троянди, важливо не тільки правильно доглядати за рослинами. Все починається із вибору
-                        посівного матеріалу. І тут постає питання: яке насіння вибрати? Адже вони мають бути якісними, давати гарну схожість.
-                    </p>
-                    <p class="seeds_text">Предлагаем покупателям широкий выбор семян овощей. У нас вы можете найти семена баклажан, разных видов капусты, бобовых и
-                        бахчевых культур, томата, перца, огурцов, лука, салата, чеснока, картофеля от отечественных и зарубежных производителей.
-                    </p>
-                    <p class="seeds_text">Также вы можете найти в нашем каталоге семена цветов: однолетних (петуния, львиный зев, календула и т.д.), двулетних (виола,
-                        примула, мальва), многолетних (иберис, анемона, гибискус, дельфиниум, фрезия), луковичных (тюльпаны, лилия, ирис, нарциссы),
-                        комнатных (гербера, бегония, кактус, мимоза, пасифлора). Конечно, это далеко не весь список — каждая хозяйка найдет здесь свой
-                         любимый цветок.
-                    </p>
-                    <p class="seeds_text">В широком ассортименте представлены саженцы плодовых деревьев, роз, ягодных кустов. У нас вы можете купить семена газонной
-                        травы, а также сопутствующие товары: удобрения, средства защиты, биопрепараты, садовый инвентарь, субстраты, грунты,
-                        агроволокно, горшки, кассеты для рассады.
-                    </p>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/flower_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Петунія Софістика F1</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">20</p> 
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/skor_ing.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Скор 250 ЕС к.э.</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">589</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/bottle_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Скор 250 ЕС к.э.</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">200</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/petunya_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Петунія Софістика F1</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">20</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>   
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/flower_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Петунія Софістика F1</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">20</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="promotion_section">
+        <div class="slider_container">
+            <h2>
+                <img src="./img/Vector_icon.png" alt=""><span>Акції</span><img src="./img/back_Vector_icon.png" alt="">
+            </h2>
+            <div class="new_slider">
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/flower_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Петунія Софістика F1</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">20</p> 
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/skor_ing.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Скор 250 ЕС к.э.</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">589</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/bottle_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Скор 250 ЕС к.э.</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">200</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/petunya_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Петунія Софістика F1</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">20</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>   
+                    <article class="slider_article">
+                        <div class="slider_item">
+                            <div class="item_top">
+                                <img src="./img/flower_img.png" alt="Опис товару">
+                                <button><img src="./img/comparsion_mini.svg" alt="Додати до порівняння"></button>
+                            </div>
+                            <div class="item_bottom">
+                                <h4>Петунія Софістика F1</h4>
+                                <div class="item_info">
+                                    <div class="price_of_item">
+                                        <p class="item_price">20</p>
+                                        <p class="item_quantity">1</p>
+                                    </div>
+                                    <button class="item_buy"><img src="./img/shop_mini.svg" alt="Додати до кошику"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+            <a class="all_goods_btn" href="#">Дивитися усі товари</a>
+        </div>
+    </section>
+
+    <section class="partners_section">
+        <div class="partners">
+            <h2><img src="./img/Vector_icon.png" alt=""><span>Партнери</span><img src="./img/back_Vector_icon.png" alt=""></h2>
+            
+
+            <div class="new_slider">
+                <div><img src="./img/partners_logo/rodo_logo.svg" alt="rodo_logo"></div>
+                <div><img src="./img/partners_logo//basf_logo.svg" alt="basf_logo"></div>
+                <div><img src="./img/partners_logo/adama_logo.svg" alt="adama_logo"></div>
+                <div><img src="./img/partners_logo/lidea_logo.svg" alt="lidea_logo"></div>
+                <div><img src="./img/partners_logo/dekalb_logo.svg" alt="dekalb_logo"></div>
+                <div><img src="./img/partners_logo//basf_logo.svg" alt="basf_logo"></div>
+                </div>
+        </div>
+    </section>
+
+    <section class="seeds_section">
+        <div class="container">
+            <h2><img src="./img/Vector_icon.png" alt="">Семена</h2>
+            <div>
+                <p class="seeds_text">Вирощування овочів, квітів на своїй ділянці або просто на балконі - це улюблене заняття багатьох дачників та городників.
+                    Звичайно, свіжі овочі з власного городу натуральні, смачні та корисні. Але щоб отримати хороший урожай томату або капусти,
+                    насолоджуватися цвітінням петунії або троянди, важливо не тільки правильно доглядати за рослинами. Все починається із вибору
+                    посівного матеріалу. І тут постає питання: яке насіння вибрати? Адже вони мають бути якісними, давати гарну схожість.
+                </p>
+                <p class="seeds_text">Предлагаем покупателям широкий выбор семян овощей. У нас вы можете найти семена баклажан, разных видов капусты, бобовых и
+                    бахчевых культур, томата, перца, огурцов, лука, салата, чеснока, картофеля от отечественных и зарубежных производителей.
+                </p>
+                <p class="seeds_text">Также вы можете найти в нашем каталоге семена цветов: однолетних (петуния, львиный зев, календула и т.д.), двулетних (виола,
+                    примула, мальва), многолетних (иберис, анемона, гибискус, дельфиниум, фрезия), луковичных (тюльпаны, лилия, ирис, нарциссы),
+                    комнатных (гербера, бегония, кактус, мимоза, пасифлора). Конечно, это далеко не весь список — каждая хозяйка найдет здесь свой
+                        любимый цветок.
+                </p>
+                <p class="seeds_text">В широком ассортименте представлены саженцы плодовых деревьев, роз, ягодных кустов. У нас вы можете купить семена газонной
+                    травы, а также сопутствующие товары: удобрения, средства защиты, биопрепараты, садовый инвентарь, субстраты, грунты,
+                    агроволокно, горшки, кассеты для рассады.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
 
     <footer>
         <div class="container">
